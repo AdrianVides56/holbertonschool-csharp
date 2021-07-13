@@ -20,7 +20,7 @@ C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programm
 - [x] What is the meaning behind the name C#?
 - [x] Who is the lead architect of the development team of C#?
 - [x] What is .NET?
-- What is the difference between C# and .NET?
+- [x] What is the difference between C# and .NET?
 - [x] How to use VSCode and the integrated terminal to initialize, build, and run C# projects
 - [x] How to print text and variables using Console.Write
 
