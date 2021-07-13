@@ -9,18 +9,16 @@ This project was created with learning purposes at Holberton School; on `Ubuntu 
 C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in the .NET ecosystem.
 - Fun Fact: C# was Inspired from musical notation where a sharp indicates that the written note should be made a half-step higher in pitch (`c++++`)
 
-<center>
-
-![CSharpLogo](https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png)
-
-</center>
+<p align="center">
+<img height="300" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png">
+</p>
 
 ### Learning Objectives
 
 - [x] What is the meaning behind the name C#?
 - [x] Who is the lead architect of the development team of C#?
 - [x] What is .NET?
-- What is the difference between C# and .NET?
+- [x] What is the difference between C# and .NET?
 - [x] How to use VSCode and the integrated terminal to initialize, build, and run C# projects
 - [x] How to print text and variables using Console.Write
 
