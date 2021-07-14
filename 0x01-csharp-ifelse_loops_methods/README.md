@@ -8,7 +8,7 @@ This project was created with learning purposes at Holberton School; on `Ubuntu 
 ---
 
  <p align="center">
-<img height="150" src="https://mymasterdesigner.com/wp-content/uploads/2021/04/C-For-Beginner-Tutorial-Loop-Part.jpeg">
+<img height="250" src="https://mymasterdesigner.com/wp-content/uploads/2021/04/C-For-Beginner-Tutorial-Loop-Part.jpeg">
 </p>
 
 
