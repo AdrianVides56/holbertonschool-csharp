@@ -33,7 +33,8 @@ class MyStack
             else
                 aStack.Pop();
         }
-        aStack.Pop();
+        if (check == true)
+            aStack.Pop();
         aStack.Push(newItem);
 
         return aStack;
