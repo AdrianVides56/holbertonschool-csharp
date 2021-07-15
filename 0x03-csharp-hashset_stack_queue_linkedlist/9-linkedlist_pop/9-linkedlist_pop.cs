@@ -11,7 +11,7 @@ class LList
 			myLList.RemoveFirst();
 			return data;
 		}
-		catch (InvalidOperationException)
+		catch (Exception)
 		{
 			return 0;
 		}
