@@ -19,11 +19,11 @@ class MyStack
         
         if (aStack.Contains(search))
         {
-            Console.WriteLine($"Stack contains {search}: True");
+            Console.WriteLine($"Stack contains \"{search}\": True");
             check = true;
         }
         else
-            Console.WriteLine($"Stack contains {search}: False");
+            Console.WriteLine($"Stack contains \"{search}\": False");
 
         while (check)
         {
