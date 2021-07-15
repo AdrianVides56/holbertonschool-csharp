@@ -5,7 +5,7 @@ class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        if (index < 0 || index >= myList.Count)
+        if (index < 0 || index >= myList.Count || myList == null || myList.Count == 0)
         {
             System.Console.WriteLine("Index out of range");
             return myList;
