@@ -29,12 +29,10 @@ class MyStack
         {
             aux = aStack.Peek();
             if (String.Equals(search, aux))
-                break;
-            else
-                aStack.Pop();
-        }
-        if (check == true)
+                check = false;
             aStack.Pop();
+        }
+
         aStack.Push(newItem);
 
         return aStack;
