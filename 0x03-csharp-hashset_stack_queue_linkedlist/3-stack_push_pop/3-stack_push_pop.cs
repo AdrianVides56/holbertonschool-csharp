@@ -7,6 +7,7 @@ class MyStack
     {
         int count = 0;
         string aux = null;
+        bool check = false;
         foreach (var item in aStack)
             count++;
         Console.WriteLine($"Number of items: {count}");
@@ -19,19 +20,20 @@ class MyStack
         if (aStack.Contains(search))
         {
             Console.WriteLine($"Stack contains {search}: True");
-            while (true)
-            {
-                aux = aStack.Peek();
-                if (String.Equals(search, aux))
-                    break;
-                else
-                    aStack.Pop();
-            }
-            aStack.Pop();
+            check = true;
         }
         else
             Console.WriteLine($"Stack contains {search}: False");
 
+        while (check)
+        {
+            aux = aStack.Peek();
+            if (String.Equals(search, aux))
+                break;
+            else
+                aStack.Pop();
+        }
+        aStack.Pop();
         aStack.Push(newItem);
 
         return aStack;
