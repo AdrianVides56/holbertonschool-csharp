@@ -9,13 +9,11 @@ class LList
 
 		if (myLList.First.Value > n)
 		{
-			node.Value = n;
 			myLList.AddFirst(node);
 			return node;
 		}
 		else if (myLList.Last.Value < n)
 		{
-			node.Value = n;
 			myLList.AddLast(node);
 			return node;
 		}
@@ -28,6 +26,6 @@ class LList
 			node = node.Next;
 		}
 		myLList.AddAfter(node, n);
-		return node;
+		return myLList.Last;
 	}
 }
