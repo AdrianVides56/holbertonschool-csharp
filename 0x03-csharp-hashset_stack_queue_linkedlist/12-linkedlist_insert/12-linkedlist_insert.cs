@@ -5,8 +5,22 @@ class LList
 {
 	public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
 	{
-		LinkedListNode<int> node = myLList.First;
+		LinkedListNode<int> node = new LinkedListNode<int>(n);
 
+		if (myLList.First.Value > n)
+		{
+			node.Value = n;
+			myLList.AddFirst(node);
+			return node;
+		}
+		else if (myLList.Last.Value < n)
+		{
+			node.Value = n;
+			myLList.AddLast(node);
+			return node;
+		}
+
+		node = myLList.First;
 		while (true)
 		{
 			if (node.Next.Value > n && node.Previous.Value < n)
