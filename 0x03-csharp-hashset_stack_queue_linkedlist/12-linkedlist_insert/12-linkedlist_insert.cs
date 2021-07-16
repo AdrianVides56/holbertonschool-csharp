@@ -7,14 +7,14 @@ class LList
 	{
 		LinkedListNode<int> node = new LinkedListNode<int>(n);
 
-		if (myLList.First.Value > n)
+		if (myLList.First.Value >= n)
 		{
-			myLList.AddFirst(node);
+			myLList.AddFirst(n);
 			return myLList.First;
 		}
-		else if (myLList.Last.Value < n)
+		else if (myLList.Last.Value <= n)
 		{
-			myLList.AddLast(node);
+			myLList.AddLast(n);
 			return myLList.Last;
 		}
 
