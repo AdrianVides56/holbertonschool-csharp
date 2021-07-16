@@ -10,12 +10,12 @@ class LList
 		if (myLList.First.Value > n)
 		{
 			myLList.AddFirst(node);
-			return node;
+			return myLList.First;
 		}
 		else if (myLList.Last.Value < n)
 		{
 			myLList.AddLast(node);
-			return node;
+			return myLList.Last;
 		}
 
 		node = myLList.First;
@@ -26,6 +26,6 @@ class LList
 			node = node.Next;
 		}
 		myLList.AddAfter(node, n);
-		return myLList.Last;
+		return node;
 	}
 }
