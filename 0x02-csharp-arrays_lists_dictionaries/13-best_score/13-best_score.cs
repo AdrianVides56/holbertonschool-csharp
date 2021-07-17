@@ -8,6 +8,9 @@ class Dictionary
 		string key = null;
 		int best = 0;
 
+		if (myList == null || myList.Count == 0)
+			return "None";
+
 		foreach (KeyValuePair<string, int> pair in myList)
 		{
 			if (pair.Value > best)
