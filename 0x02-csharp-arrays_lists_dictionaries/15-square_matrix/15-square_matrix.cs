@@ -7,8 +7,8 @@ class Matrix
 	{
 		int[,] square = (int[,])myMatrix.Clone();
 
-		for (int i = 0; i < Math.Sqrt(square.Length); i++)
-			for (int j = 0; j < Math.Sqrt(square.Length); j++)
+		for (int i = 0; i < myMatrix.GetLength(0); i++)
+			for (int j = 0; j < myMatrix.GetLength(1); j++)
 				{
 					square[i, j] = (int)Math.Pow(square[i, j], 2);
 				}
