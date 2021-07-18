@@ -1,5 +1,4 @@
 # 0x03. C# - Data Structures: HashSet, Stack, Queue, LinkedList
-# 0x01-csharp-ifelse_loops_methods
 
 ---
 
