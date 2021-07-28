@@ -38,7 +38,7 @@ namespace Enemies
 		///<summary>Prints the zombie's name and health'.</summary>
 		public override string ToString()
 		{
-			return $"Zombie name: {name} / Total health: {health}";
+			return $"Zombie Name: {name} / Total Health: {health}";
 		}
 	}
 }
