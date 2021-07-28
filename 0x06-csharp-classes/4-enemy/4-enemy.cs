@@ -8,7 +8,7 @@ namespace Enemies
 		///<summary>Zombie health.</summary>
 		private int health;
 		///<summary>Zombie name.</summary>
-		private string name;
+		private string name = "(No name)";
 
 		///<summary>Initialize a new instance of <see cref="Zombie"/>.</summary>
 		public Zombie() => health = 0;
