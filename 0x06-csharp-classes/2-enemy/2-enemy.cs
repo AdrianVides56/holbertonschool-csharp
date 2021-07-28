@@ -10,6 +10,8 @@ namespace Enemies
 
 		///<summary>Initialize a new instance of <see cref="Zombie"/>.</summary>
 		public Zombie() => health = 0;
+		
+		///<summary>Initialize a new instance of <see cref="Zombie"/>.</summary>
 		public Zombie(int value)
 		{
 			if (value < 0)
