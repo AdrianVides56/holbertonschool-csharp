@@ -39,5 +39,12 @@ namespace Text.Tests
             int result = Str.UniqueChar(s);
             Assert.AreEqual(result, 0);
         }
+
+        [Test]
+        public void MiddleUniqueChar([Values("aabbccdffeegg")] string s)
+        {
+            int result = Str.UniqueChar(s);
+            Assert.AreEqual(result, 6);
+        }
     }
 }
