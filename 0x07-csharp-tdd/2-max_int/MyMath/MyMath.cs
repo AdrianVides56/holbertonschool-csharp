@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace MyMath
+{
+    public class Operations
+    {
+        public static int Max(List<int> nums)
+        {
+            if (nums.Count == 0)
+                return 0;
+            return nums.Max();
+        }
+    }
+}
