@@ -46,5 +46,12 @@ namespace Text.Tests
             bool result = Str.IsPalindrome(s);
             Assert.AreEqual(result, true);
         }
+
+        [Test]
+        public void OneLengthString([Values(" ", "t")] string s)
+        {
+            bool result = Str.IsPalindrome(s);
+            Assert.AreEqual(result, true);
+        }
     }
 }
