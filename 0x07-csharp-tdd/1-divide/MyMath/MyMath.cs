@@ -11,7 +11,7 @@ namespace MyMath
                 int[,] newMatrix = (int[,])matrix.Clone();
                 for (int i = 0; i < newMatrix.GetLength(0); i++)
                 {
-                    for (int j = 0; j < newMatrix.GetLength(i); j++)
+                    for (int j = 0; j < newMatrix.GetLength(1); j++)
                     {
                         newMatrix[i, j] /= num; 
                     }

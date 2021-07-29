@@ -25,6 +25,24 @@ namespace MyMath.Tests
         }
 
         [Test]
+        public void DivisionByNegativeInteger()
+        {
+            int[,] matrix = {
+                {2, 4},
+                {6, 8}
+            };
+            int num = -2;
+            int[,] expected = {
+                {-1, -2},
+                {-3, -4}
+            };
+
+            int[,] result = Matrix.Divide(matrix, num);
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
         public void DivisionByZero()
         {
             using (StringWriter stringWriter = new StringWriter())
@@ -35,11 +53,10 @@ namespace MyMath.Tests
                     {6, 8}
                 };
                 int num = 0;
-                string expected = "Num cannot be 0\n";
 
                 int[,] result = Matrix.Divide(matrix, num);
 
-                Assert.AreEqual(expected, stringWriter.ToString());
+                Assert.AreEqual("Num cannot be 0\n", stringWriter.ToString());
                 Assert.AreEqual(result, null);
             }
         }
@@ -60,6 +77,25 @@ namespace MyMath.Tests
             int num = 2;
             int[,] result = Matrix.Divide(matrix, num);
             Assert.AreEqual(result, matrix);
+        }
+
+        [Test]
+        public void DivisionbyGreaterNum()
+        {
+            int[,] matrix = {
+                {2, 2},
+                {2, 2},
+                {2, 2}
+            };
+            int num = 4;
+            int[,] expected = {
+                {2/4, 2/4},
+                {2/4, 2/4},
+                {2/4, 2/4}
+            };
+
+            int[,] result = Matrix.Divide(matrix, num);
+            Assert.AreEqual(result, expected);
         }
     }
 }
