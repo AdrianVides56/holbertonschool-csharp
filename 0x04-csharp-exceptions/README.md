@@ -49,9 +49,9 @@ Write a method that prints n elements of a list.
 <summary>Example:</summary>
 
 ```sh
-carrie@ubuntu:~/0x04/0-safe_list_print$ ls
+Your@Shell: ~/0x04/0-safe_list_print$ ls
 0-main.cs  0-safe_list_print.cs  0-safe_list_print.csproj  bin  obj
-carrie@ubuntu:~/0x04/0-safe_list_print$ dotnet run
+Your@Shell: ~/0x04/0-safe_list_print$ dotnet run
 1
 2
 3
@@ -85,9 +85,9 @@ Write a function that divides 2 integers and prints the result.
 <summary>Example:</summary>
 
 ```sh
-carrie@ubuntu:~/0x04/1-divide_print$ ls
+Your@Shell: ~/0x04/1-divide_print$ ls
 1-main.cs  1-divide_print.cs  1-divide_print.csproj  bin  obj
-carrie@ubuntu:~/0x04/1-divide_print$ dotnet run
+Your@Shell: ~/0x04/1-divide_print$ dotnet run
 4 / 3 = 1
 
 Cannot divide by zero
@@ -112,9 +112,9 @@ Write a function that divides element by element 2 lists.
 <summary>Example:</summary>
 
 ```sh
-carrie@ubuntu:~/0x04/2-divide_lists$ ls
+Your@Shell: ~/0x04/2-divide_lists$ ls
 2-main.cs  2-divide_lists.cs  2-divide_lists.csproj  bin  obj
-carrie@ubuntu:~/0x04/2-divide_lists$ dotnet run
+Your@Shell: ~/0x04/2-divide_lists$ dotnet run
 Cannot divide by zero
 Out of range
 1
@@ -133,9 +133,9 @@ Write a function that throws an `Exception`.
 <summary>Example:</summary>
 
 ```sh
-carrie@ubuntu:~/0x04/3-throw_exception$ ls
+Your@Shell: ~/0x04/3-throw_exception$ ls
 3-main.cs  3-throw_exception.cs  3-throw_exception.csproj  bin  obj
-carrie@ubuntu:~/0x04/3-throw_exception$ dotnet run
+Your@Shell: ~/0x04/3-throw_exception$ dotnet run
 Exception raised
 ```
 </details>
@@ -149,9 +149,9 @@ Write a method that throws an `Exception` with a message.
 <summary>Example:</summary>
 
 ```sh
-carrie@ubuntu:~/0x04/4-throw_exception_msg$ ls
+Your@Shell: ~/0x04/4-throw_exception_msg$ ls
 4-main.cs  4-throw_exception_msg.cs  4-throw_exception_msg.csproj  bin  obj
-carrie@ubuntu:~/0x04/4-throw_exception_msg$ dotnet run
+Your@Shell: ~/0x04/4-throw_exception_msg$ dotnet run
 C is fun
 ```
 </details>
