@@ -22,14 +22,10 @@ class Rectangle : Shape
 		get { return width; }
 		set
 		{
-			try
-			{
-				width = value;
-			}
-			catch (ArgumentException)
-			{
+			if (value < 0)
 				throw new ArgumentException("Width must be greater than or equal to 0");
-			}
+			else
+				width = value;
 		}
 	}
 	///<summary>Gets or sets the height of the rectangle.</summary>
@@ -38,14 +34,10 @@ class Rectangle : Shape
 		get { return height; }
 		set
 		{
-			try
-			{
-				height = value;
-			}
-			catch (ArgumentException)
-			{
+			if (value < 0)
 				throw new ArgumentException("Height must be greater than or equal to 0");
-			}
+			else
+				height = value;
 		}
 	}
 
