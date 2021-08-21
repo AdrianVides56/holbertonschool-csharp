@@ -10,8 +10,8 @@ class VectorMath
 		if (vector.Length < 2.0)
 			return -1;
 		foreach (var i in vector)
-			sum += Math.Pow(i, 2);
-		sum = Math.Sqrt(sum);
+			sum += Math.Round(Math.Pow(i, 2), 2);
+		sum = Math.Round(Math.Sqrt(sum), 2);
 
 		return Math.Round(sum, 2);
 	}
