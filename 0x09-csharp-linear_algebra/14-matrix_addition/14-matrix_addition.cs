@@ -1,5 +1,5 @@
 ///<summary>Initialize class.</summary>
-class VectorMath
+class MatrixMath
 {
 	///<summary>Adds two matrices.</summary>
 	public static double[,] Add(double[,] matrix1, double[,] matrix2)

@@ -13,7 +13,7 @@ class Program
 			{ 1, 3, 7 }
 		};
 
-		double[,] res = VectorMath.Add(m1, m2);
+		double[,] res = MatrixMath.Add(m1, m2);
 
 		for (int i = 0; i < res.GetLength(0); i++)
 		{
