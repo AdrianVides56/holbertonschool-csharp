@@ -7,7 +7,7 @@ class VectorMath
 	public static double Magnitude(double[] vector)
 	{
 		double sum = 0;
-		if (vector.Length < 2)
+		if (vector.Length < 2 || vector.Length > 3)
 			return -1;
 		foreach (var i in vector)
 			sum += Math.Pow(i, 2);
