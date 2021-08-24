@@ -28,7 +28,7 @@ class MatrixMath
 
 	}
 
-	/// <summary>Set the matrix to be use the Sarrus method.</summary>
+	///<summary>Set the matrix to be use the Sarrus method.</summary>
 	public static double[,] sarrusMatrix(double[,] matrix)
 	{
 		double[,] sarr = new double[matrix.GetLength(0) + 2, matrix.GetLength(1)];
