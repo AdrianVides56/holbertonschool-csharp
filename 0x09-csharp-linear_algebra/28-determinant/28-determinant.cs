@@ -5,7 +5,8 @@ class MatrixMath
 	public static double Determinant(double[,] matrix)
 	{
 		if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 ||
-			matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3)
+			matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3 ||
+			matrix.GetLength(0) != matrix.GetLength(1))
 			return -1;
 
 		double[,] sarMatrix = sarrusMatrix(matrix);
