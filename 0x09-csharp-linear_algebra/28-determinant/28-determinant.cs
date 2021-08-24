@@ -1,6 +1,7 @@
 ///<summary>Initialize class.</summary>
 class MatrixMath
 {
+	///<summary>Caluclates the determinant of a 2D or 3D matrix.</summary>
 	public static double Determinant(double[,] matrix)
 	{
 		if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 ||
@@ -27,6 +28,7 @@ class MatrixMath
 
 	}
 
+	/// <summary>Set the matrix to be use the Sarrus method.</summary>
 	public static double[,] sarrusMatrix(double[,] matrix)
 	{
 		double[,] sarr = new double[matrix.GetLength(0) + 2, matrix.GetLength(1)];
