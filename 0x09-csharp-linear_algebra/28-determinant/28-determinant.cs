@@ -2,6 +2,8 @@
 class MatrixMath
 {
 	///<summary>Caluclates the determinant of a 2D or 3D matrix.</summary>
+	///<param name="matrix">The matrix.</param>
+	///<returns>The determinant, or -1 if the matrix don't have a determinant or is not neither 2D nor 3D.</returns>
 	public static double Determinant(double[,] matrix)
 	{
 		if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 ||
@@ -29,7 +31,9 @@ class MatrixMath
 
 	}
 
-	///<summary>Set the matrix to be use the Sarrus method.</summary>
+	///<summary>Set the matrix to use the Sarrus method.</summary>
+	///<param name="matrix">The matrix.</param>
+	///<returns>The matrix with 2 aditionnal rows.</returns>
 	public static double[,] sarrusMatrix(double[,] matrix)
 	{
 		double[,] sarr = new double[matrix.GetLength(0) + 2, matrix.GetLength(1)];

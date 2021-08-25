@@ -2,6 +2,9 @@
 class MatrixMath
 {
 	///<summary>Adds two matrices.</summary>
+	///<param name="matrix1">First matrix.</param>
+	///<param name="matrix2">Second matrix.</param>
+	///<returns>A new matrix.</returns>
 	public static double[,] Add(double[,] matrix1, double[,] matrix2)
 	{
 		if (matrix1.Length != matrix2.Length || matrix1.GetLength(0) < 2 || matrix1.GetLength(0) > 3 ||

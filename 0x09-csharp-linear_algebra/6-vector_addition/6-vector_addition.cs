@@ -5,6 +5,9 @@ using System;
 class VectorMath
 {
 	///<summary>Adds two vectors.</summary>
+	///<param name="vector1">First vector.</param>
+	///<param name="vector2">Second vector.</param>
+	///<returns>A new vector with the adition.</returns>
 	public static double[] Add(double[] vector1, double[] vector2)
 	{
 		if (vector1.Length != vector2.Length || vector1.Length < 2 ||

@@ -1,6 +1,9 @@
 ///<summary>Initialize class.</summary>
 class MatrixMath
 {
+	/// <summary>Transposes a matrix.</summary>
+	/// <param name="matirx">The matrix.</param>
+	/// <returns>The transposed matrix.</returns>
 	public static double[,] Transpose(double[,] matrix)
 	{
 		if (matrix.Length == 0)

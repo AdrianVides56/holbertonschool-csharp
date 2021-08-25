@@ -4,6 +4,8 @@ using System;
 class VectorMath
 {
 	///<summary>Calculates the length of a given vector.</summary>
+	///<param name="vector">The vector.</param>
+	///<returns>The length of the vector.</returns>
 	public static double Magnitude(double[] vector)
 	{
 		double sum = 0;
