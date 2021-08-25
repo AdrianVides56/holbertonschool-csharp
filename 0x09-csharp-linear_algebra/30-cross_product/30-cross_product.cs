@@ -1,7 +1,13 @@
+using System;
+
+
 ///<summary>Initialize class.</summary>
 class VectorMath
 {
 	///<summary>Calculates the Cross Product of two 3D vectors.</summary>
+	///<param name="vector1"> first Vector.</param>
+	///<param name="vector2"> second Vector.</param>
+	///<returns> the cross product.</returns>
 	public static double[] CrossProduct(double[] vector1, double[] vector2)
 	{
 		if (vector1.Length != 3 || vector2.Length != 3)
@@ -16,8 +22,12 @@ class VectorMath
 		return crossVector;
 	}
 
+	///<summary>Multiply 2 doubles.</summary>
+	///<param name="v1">first double</param>
+	///<param name="v2"> second double</param>
+	///<returns>product of 2 doubles</returns>
 	public static double Multiply(double v1, double v2)
 	{
-		return v1 * v2;
+		return Math.Round(v1 * v2);
 	}
 }
