@@ -1,3 +1,6 @@
+using System;
+
+
 ///<summary>Initialize class.</summary>
 class MatrixMath
 {
@@ -17,17 +20,17 @@ class MatrixMath
 		for (int i = 0; i < matrix.GetLength(0); i++, aux = 1)
 		{
 			for (int j = 0; j < matrix.GetLength(1); j++)
-				aux *= sarMatrix[i + j, j];
+				aux *= Math.Round(sarMatrix[i + j, j], 2);
 			det += aux;
 		}
 		for (int i = 0, tmp = 0; i < matrix.GetLength(0); i++, aux = 1, tmp = i)
 		{
 			for (int j = matrix.GetLength(1) - 1; j >= 0; j--)
-				aux *= sarMatrix[tmp++, j];
+				aux *= Math.Round(sarMatrix[tmp++, j], 2);
 			det -= aux;
 		}
 
-		return det;
+		return Math.Round(det, 2);
 
 	}
 
