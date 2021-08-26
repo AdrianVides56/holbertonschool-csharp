@@ -28,6 +28,6 @@ class VectorMath
 	///<returns>product of 2 doubles</returns>
 	public static double Multiply(double v1, double v2)
 	{
-		return Math.Round(v1 * v2);
+		return Math.Round(v1 * v2, 2);
 	}
 }
