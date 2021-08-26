@@ -6,8 +6,8 @@ class MatrixMath
 	///<returns>The determinant, or -1 if the matrix don't have a determinant or is not neither 2D nor 3D.</returns>
 	public static double Determinant(double[,] matrix)
 	{
-		if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 ||
-			matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3 ||
+		if (matrix.GetLength(0) != 2 || matrix.GetLength(0) != 3 ||
+			matrix.GetLength(1) != 2 || matrix.GetLength(1) != 3 ||
 			matrix.GetLength(0) != matrix.GetLength(1))
 			return -1;
 
