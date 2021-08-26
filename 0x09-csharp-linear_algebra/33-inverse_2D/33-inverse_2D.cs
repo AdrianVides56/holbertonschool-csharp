@@ -92,7 +92,7 @@ class MatrixMath
 		for (int i = 0; i < matrix.GetLength(0); i++)
 		{
 			for (int j = 0; j < matrix.GetLength(1); j++)
-				result[i, j] = matrix[i, j] * scalar;
+				result[i, j] = Math.Round(matrix[i, j] * scalar, 2);
 		}
 
 		return result;
