@@ -15,9 +15,9 @@ class VectorMath
 
 		double[] crossVector = new double[vector1.Length];
 
-		crossVector[0] = Math.Round(Multiply(vector1[1], vector2[2]) - Multiply(vector1[2], vector2[1]));
-		crossVector[1] = Math.Round(Multiply(vector1[0], vector2[2]) - Multiply(vector1[2], vector2[0]));
-		crossVector[2] = Math.Round(Multiply(vector1[0], vector2[1]) - Multiply(vector1[1], vector2[0]));
+		crossVector[0] = Math.Round(Multiply(vector1[1], vector2[2]) - Multiply(vector1[2], vector2[1]), 2);
+		crossVector[1] = Math.Round(Multiply(vector1[0], vector2[2]) - Multiply(vector1[2], vector2[0]), 2);
+		crossVector[2] = Math.Round(Multiply(vector1[0], vector2[1]) - Multiply(vector1[1], vector2[0]), 2);
 
 		return crossVector;
 	}
