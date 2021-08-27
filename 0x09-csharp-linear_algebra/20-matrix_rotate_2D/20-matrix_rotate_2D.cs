@@ -42,7 +42,7 @@ class MatrixMath
 				aux = 0;
 				for (int idx = 0; idx < rowsB; idx++)
 					aux += Math.Round(matrix1[row, idx] * matrix2[idx, col], 2);
-				res[row, col] = aux;
+				res[row, col] = Math.Round(aux, 2);
 			}
 		}
 
