@@ -5,8 +5,5 @@ using System;
 class Queue<T>
 {
 	///<summary>Returns Queue's type.</summary>
-	public Type CheckType()
-	{
-		return typeof(T);
-	}
+	public Type CheckType() => typeof(T);
 }
