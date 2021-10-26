@@ -15,14 +15,14 @@ abstract class Base
 }
 
 /// <summary>Interact interface.</summary>
-interface Iinterface
+interface IInteractive
 {
 	/// <summary>Interact.</summary>
 	void Interact();
 }
 
 /// <summary>Breakable interface.</summary>
-interface Ibreakable
+interface IBreakable
 {
 	/// <summary>Durability.</summary>
 	int durability { get; set; }
@@ -31,16 +31,16 @@ interface Ibreakable
 }
 
 /// <summary>Collectable interface.</summary>
-interface Icollectable
+interface ICollectable
 {
 	/// <summary>Is it collectable?</summary>
-	bool isCollectable { get; set; }
+	bool isCollected { get; set; }
 	/// <summary>Collect.</summary>
 	void Collect();
 }
 
 /// <summary>Test class.</summary>
-class TestObject : Base, Iinterface, Ibreakable, Icollectable
+class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
 	/// <summary>Interact.</summary>
 	public void Interact()
@@ -51,7 +51,7 @@ class TestObject : Base, Iinterface, Ibreakable, Icollectable
 	public void Break()
 	{}
 	/// <summary>Is it collectable?</summary>
-	public bool isCollectable { get; set; }
+	public bool isCollected { get; set; }
 	/// <summary>Collect.</summary>
 	public void Collect()
 	{}
