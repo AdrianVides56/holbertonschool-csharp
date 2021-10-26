@@ -1,5 +1,4 @@
-0x0A. C# - Generics
-# 0x06. C# - Classes and Namespaces
+# 0x0A. C# - Generics
 
 ---
 
