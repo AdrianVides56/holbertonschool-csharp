@@ -123,17 +123,12 @@ class Key : Base, ICollectable
 class Objs<T> : IEnumerable<T>
 {
 	/// <summary>Collection.</summary>
-	private List<T> collection;
-
-	/// <summary>Constructor.</summary>
-	public Objs() => collection = new List<T>();
+	private List<T> collection = new List<T>();
 
 	/// <summary>Adds an object to the collection.</summary>
 	public void Add(T obj) => collection.Add(obj);
 
 	/// <summary>Enumerates the collection.</summary>
 	public IEnumerator<T> GetEnumerator() => collection.GetEnumerator();
-
-	/// <summary>Enumerates the collection.</summary>
 	IEnumerator IEnumerable.GetEnumerator() => collection.GetEnumerator();
 }
