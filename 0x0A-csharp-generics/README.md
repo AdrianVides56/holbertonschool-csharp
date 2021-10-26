@@ -17,11 +17,11 @@ This project was created with learning purposes at Holberton School; on `Ubuntu 
 
 - [x] What are generics and what are their purpose
 - [x] What common generic classes and interfaces are provided in the .NET class library
-- [x]When and how to create generic classes
-- [x]When and how to create generic methods
-- [x]How access modifiers affect a class and its members
-- [x]What is the `default(T)` expression used for
-- [x]What is covariance and contravariance
+- [x] When and how to create generic classes
+- [x] When and how to create generic methods
+- [x] How access modifiers affect a class and its members
+- [x] What is the `default(T)` expression used for
+- [x] What is covariance and contravariance
 
 ---
 
