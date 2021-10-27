@@ -41,7 +41,7 @@ public class Player
 			return;
 		}
 		this.hp -= damage;
-		Console.WriteLine($"{this.name} takes {damage} damage");
+		Console.WriteLine($"{this.name} takes {damage} damage!");
 	}
 
 	/// <summary>Heals the player.</summary>
