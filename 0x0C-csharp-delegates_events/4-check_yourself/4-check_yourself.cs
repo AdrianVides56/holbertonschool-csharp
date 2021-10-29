@@ -131,7 +131,7 @@ public class Player
 class CurrentHPArgs : EventArgs
 {
 	/// <summary>Gets or sets the current HP.</summary>
-	public float currentHP;
+	public float currentHP { get; }
 
 	public CurrentHPArgs(float newHp)
 	{
