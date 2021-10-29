@@ -83,10 +83,13 @@ public class Player
 	{
 		if (newHP < 0)
 			this.hp = 0;
-		if (newHP > this.maxHp)
-			this.hp = this.maxHp;
 		else
-			this.hp = newHP;
+		{
+			if (newHP > this.maxHp)
+				this.hp = this.maxHp;
+			else
+				this.hp = newHP;
+		}
 		HPCheck?.Invoke(this, new CurrentHPArgs(this.hp));
 	}
 
@@ -111,16 +114,16 @@ public class Player
 	/// <summary>Checks the player status.</summary>
 	private void CheckStatus(object sender, CurrentHPArgs e)
 	{
-		if (e.CurrentHP <= 0)
-			this.status = $"{this.name} is knocked out!";
-		else if (e.CurrentHP < this.maxHp * 0.25f)
-			this.status = $"{this.name} needs help";
-		else if (e.CurrentHP < this.maxHp * 0.5f)
-			this.status = $"{this.name} isn't doing too great...";
-		else if (e.CurrentHP < this.maxHp * 0.75f)
-			this.status = $"{this.name} is doing well!";
-		else
+		if (e.CurrentHP == this.maxHp)
 			this.status = $"{this.name} is in perfect health!";
+		else if (e.CurrentHP >= this.maxHp * 0.5f)
+			this.status = $"{this.name} is doing well!";
+		else if (e.CurrentHP >= this.maxHp * 0.25f)
+			this.status = $"{this.name} isn't doing too great...";
+		else if (e.CurrentHP > 0)
+			this.status = $"{this.name} needs help!";
+		else
+			this.status = $"{this.name} is knocked out!";
 		Console.WriteLine(this.status);
 	}
 }
