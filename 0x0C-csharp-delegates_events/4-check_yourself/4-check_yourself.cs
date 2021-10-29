@@ -114,13 +114,13 @@ public class Player
 	/// <summary>Checks the player status.</summary>
 	private void CheckStatus(object sender, CurrentHPArgs e)
 	{
-		if (e.CurrentHP == this.maxHp)
+		if (e.currentHP == this.maxHp)
 			this.status = $"{this.name} is in perfect health!";
-		else if (e.CurrentHP >= this.maxHp * 0.5f)
+		else if (e.currentHP >= this.maxHp * 0.5f)
 			this.status = $"{this.name} is doing well!";
-		else if (e.CurrentHP >= this.maxHp * 0.25f)
+		else if (e.currentHP >= this.maxHp * 0.25f)
 			this.status = $"{this.name} isn't doing too great...";
-		else if (e.CurrentHP > 0)
+		else if (e.currentHP > 0)
 			this.status = $"{this.name} needs help!";
 		else
 			this.status = $"{this.name} is knocked out!";
@@ -131,10 +131,10 @@ public class Player
 class CurrentHPArgs : EventArgs
 {
 	/// <summary>Gets or sets the current HP.</summary>
-	public float CurrentHP { get; set; }
+	public float currentHP;
 
 	public CurrentHPArgs(float newHp)
 	{
-		this.CurrentHP = newHp;
+		this.currentHP = newHp;
 	}
 }
