@@ -1,5 +1,0 @@
-/home/termi5666/holberton/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/obj/Debug/net50/InventoryLibrary.csproj.AssemblyReference.cache
-/home/termi5666/holberton/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/obj/Debug/net50/InventoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
-/home/termi5666/holberton/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/obj/Debug/net50/InventoryLibrary.AssemblyInfoInputs.cache
-/home/termi5666/holberton/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/obj/Debug/net50/InventoryLibrary.AssemblyInfo.cs
-/home/termi5666/holberton/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/obj/Debug/net50/InventoryLibrary.csproj.CoreCompileInputs.cache
