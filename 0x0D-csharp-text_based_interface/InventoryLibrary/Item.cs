@@ -24,6 +24,7 @@ namespace InventoryLibrary
             this.date_updated = DateTime.Now;
         }
 
+        /// <summary> Constructor </summary>
         public Item(string name, string description, float price,
             string id, DateTime date_created, DateTime date_updated)
         {

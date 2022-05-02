@@ -18,6 +18,7 @@ namespace InventoryLibrary
             this.date_updated = DateTime.Now;
         }
 
+        /// <summary> Constructor </summary>
         public User(String name, String id, DateTime date_created, DateTime date_updated)
         {
             this.name = name;
