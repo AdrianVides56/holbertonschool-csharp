@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InventoryLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:InventoryLibrary.BaseClass">
+            <summary> Base class for all classes in the InventoryLibrary. </summary>
+        </member>
+        <member name="F:InventoryLibrary.BaseClass.id">
+            <summary> Object ID </summary>
+        </member>
+        <member name="F:InventoryLibrary.BaseClass.date_created">
+            <summary> Date created </summary>
+        </member>
+        <member name="F:InventoryLibrary.BaseClass.date_updated">
+            <summary> Date updated </summary>
+        </member>
+        <member name="M:InventoryLibrary.BaseClass.ToDictionary``1(System.Object)">
+            <summary> Converts object to Dictionary. </summary>
+        </member>
+        <member name="T:InventoryLibrary.Inventory">
+            <summary> Defines an invetory </summary>
+        </member>
+        <member name="F:InventoryLibrary.Inventory.user_id">
+            <summary> User ID </summary>
+        </member>
+        <member name="F:InventoryLibrary.Inventory.item_id">
+            <summary> Item ID </summary>
+        </member>
+        <member name="F:InventoryLibrary.Inventory.quantity">
+            <summary> Item quantity </summary>
+        </member>
+        <member name="M:InventoryLibrary.Inventory.#ctor(System.String,System.String,System.Int32)">
+            <summary> Constructor </summary>
+        </member>
+        <member name="T:InventoryLibrary.Item">
+            <summary> Defines an item. </summary>
+        </member>
+        <member name="F:InventoryLibrary.Item.name">
+            <summary> Item name </summary>
+        </member>
+        <member name="F:InventoryLibrary.Item.description">
+            <summary> Item description </summary>
+        </member>
+        <member name="F:InventoryLibrary.Item.price">
+            <summary> Item price </summary>
+        </member>
+        <member name="M:InventoryLibrary.Item.#ctor(System.String,System.String,System.Single)">
+            <summary> Constructor </summary>
+        </member>
+        <member name="T:InventoryLibrary.JSONStorage">
+            <summary>Serializes and deserializes JSON objects.</summary>
+        </member>
+        <member name="M:InventoryLibrary.JSONStorage.All">
+            <summary>Returns <see cref="F:InventoryLibrary.JSONStorage.objects"/>
+            Where keys are `ClassName.id` and values are the objects
+            .</summary>
+        </member>
+        <member name="M:InventoryLibrary.JSONStorage.New(InventoryLibrary.BaseClass)">
+            <summary>Adds an object to <see cref="F:InventoryLibrary.JSONStorage.objects"/> dictionary.</summary>
+        </member>
+        <member name="M:InventoryLibrary.JSONStorage.Save">
+            <summary> Seriealizes <see cref="F:InventoryLibrary.JSONStorage.objects"/> to JSON and saves to JSON file.</summary>
+        </member>
+        <member name="M:InventoryLibrary.JSONStorage.Load">
+            <summary>Deserializes JSON file to <see cref="F:InventoryLibrary.JSONStorage.objects"/> dictionary.</summary>
+        </member>
+        <member name="T:InventoryLibrary.User">
+            <summary> Defines a user. </summary>
+        </member>
+        <member name="F:InventoryLibrary.User.name">
+            <summary> User name </summary>
+        </member>
+        <member name="M:InventoryLibrary.User.#ctor(System.String)">
+            <summary> Constructor </summary>
+        </member>
+    </members>
+</doc>
